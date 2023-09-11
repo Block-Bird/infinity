@@ -20,7 +20,7 @@ contract MyToken is Initializable, ERC721Upgradeable, PausableUpgradeable, Ownab
     }
 
     function initialize() initializer public {
-        __ERC721_init("MyToken", "MTK");
+        __ERC721_init("Infinity-Token", "IT");
         __Pausable_init();
         __Ownable_init();
         __ERC721Burnable_init();
@@ -28,7 +28,7 @@ contract MyToken is Initializable, ERC721Upgradeable, PausableUpgradeable, Ownab
     }
 
     function _baseURI() internal pure override returns (string memory) {
-        return "w";
+        return "https://gateway.pinata.cloud/ipfs/Qmazb7hkhiEyotTebqBMPsyHoF65KMhorKR87aW2XUAwnM/";
     }
 
     function pause() public onlyOwner {
